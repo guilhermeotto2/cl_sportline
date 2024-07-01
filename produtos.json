@@ -1,0 +1,71 @@
+{
+    "produtos": [
+      {
+        "nome": "Camisesa Bragantino 23/24",
+        "id": 1,
+        "tamanhos": {
+          "P": {
+            "preco": 59.99,
+            "disponivel": true
+          },
+          "M": {
+            "preco": 79.99,
+            "disponivel": false
+          },
+          "G": {
+            "preco": 119.99,
+            "disponivel": true
+          },
+          "GG": {
+            "preco": 99.99,
+            "disponivel": true
+          }
+        }
+      },
+      {
+        "nome": "Camiseta Preta Estampada",
+        "id": 2,
+        "tamanhos": {
+          "P": {
+            "preco": 34.99,
+            "disponivel": true
+          },
+          "M": {
+            "preco": 34.99,
+            "disponivel": true
+          },
+          "G": {
+            "preco": 34.99,
+            "disponivel": false
+          },
+          "GG": {
+            "preco": 34.99,
+            "disponivel": true
+          }
+        }
+      },
+      {
+        "nome": "Camiseta Azul Marinho",
+        "id": 3,
+        "tamanhos": {
+          "P": {
+            "preco": 32.99,
+            "disponivel": false
+          },
+          "M": {
+            "preco": 32.99,
+            "disponivel": true
+          },
+          "G": {
+            "preco": 32.99,
+            "disponivel": true
+          },
+          "GG": {
+            "preco": 32.99,
+            "disponivel": true
+          }
+        }
+      }
+    ]
+  }
+  
