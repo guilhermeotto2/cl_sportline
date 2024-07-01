@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
     <style>
         .product-container {
@@ -17,8 +18,9 @@
         }
 
         .product-image {
-            max-width: 300px;
+            max-width: 400px;
             margin-bottom: 30px;
+            border-radius: 10px;
         }
 
         .product-details {
@@ -40,45 +42,19 @@
             margin-right: 10px;
         }
 
-        .navbar > .container-fluid {
-        display: grid;
-        grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
-        grid-template-rows: auto;
-        padding: 0;
-        }
-
-
-        .logo {
-            grid-column: 2;
-        }
-
-        .search_menu {
-            grid-column: 4;
-        }
-
-        .fa-bars {
-            color: white;
-        }
-
-        .navbar-toggler:focus, 
-        .navbar-toggler:active {
-            box-shadow: none; 
-        }
-
-        nav {
-        background-color: black;
-        }
-
-        body {
-            font-family: "Noto Sans", sans-serif;
-        }
-
         .btn {
             width: 70%;
         }
 
         .container {
-            height: 75vh;
+            height: 80vh;
+        }
+
+        @media (max-width: 768px) {
+            .product-image {
+            max-width: 300px;
+            margin-bottom: 30px;
+            }
         }
     </style>
 </head>
@@ -138,20 +114,83 @@
     </nav>
 
     <!-- Detalhes do Produto -->
-    <div class="container mt-5 d-flex justify-content-center align-items-center">
-        <div class="product-container">
-            <img id="cardImage" class="product-image img-fluid" alt="Imagem do Produto">
-            <div class="product-details">
-                <h2 id="cardTitle"></h2>
-                <p>Esta é uma descrição detalhada do produto. Disponível em várias cores e tamanhos.</p>
-                <div class="product-price" id="cardPrice"></div>
-                <div class="product-buttons">
-                    <button class="btn btn-primary">Comprar</button>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img id="cardImage" class="product-image img-fluid" src="caminho/para/sua/imagem.jpg" alt="Imagem do Produto">
+            </div>
+            <div class="col-md-8 d-flex justify-content-center align-items ">
+                <div class="d-flex justify-content-center align-items-center ">
+                    <div class="product-details ">
+                        <h2 id="cardTitle">Título do Produto</h2>
+                        <p class="text-left">Esta é uma descrição detalhada do produto. Disponível em várias cores e tamanhos.</p>
+                        <div class="product-price" id="cardPrice">R$ 99,99</div>
+                        <div class="product-buttons">
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    
+    <div class="container">
+
+        
+        <h2 class="mb-4 text-left">Pode ser que você se interesse...</h2>
+
+        <br>
+
+    <div class="products-container">
+        
+        <div class="card" data-img="imgs/camisas/BRAGANTINO.png" onclick="redirectToBasePage(this)">
+            <img src="imgs/camisas/BRAGANTINO.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Camisa Bragantino 23/24</h5>
+                <p class="card-text">Clique para comprar</p>
+                <a href="base_buy.html?img=imgs/camisas/BRAGANTINO.png&title=Camisa Bragantino 23/24&" class="btn btn-primary">Ver detalhes</a>
+            </div>
+        </div>
+        
+
+        <div class="card">
+            <img src="imgs/camisas/Flamengo24.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Camisa Flamengo 2024</h5>
+                <p class="card-text">Clique para comprar</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="imgs/camisas/juventus24.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Camisa Juventus 23/24</h5>
+                <p class="card-text">Clique para comprar</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="imgs/camisas/saopaulo-preta.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Camisa São Paulo 23/24</h5>
+                <p class="card-text">Clique para comprar</p>
+            </div>
+        </div>
+        
+        
+        <script>
+            function redirectToBasePage(card) {
+                const imgUrl = card.getAttribute('data-img');
+                window.location.href = `base_buy.html?img=${encodeURIComponent(imgUrl)}`;
+            }
+        </script>
+    </div>
+        
+    </div>
+
+    </div>
+    
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
