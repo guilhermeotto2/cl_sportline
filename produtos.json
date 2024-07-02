@@ -1,71 +1,220 @@
 {
-    "produtos": [
-      {
-        "nome": "Camisesa Bragantino 23/24",
-        "id": 1,
-        "tamanhos": {
-          "P": {
-            "preco": 59.99,
-            "disponivel": true
-          },
-          "M": {
-            "preco": 79.99,
-            "disponivel": false
-          },
-          "G": {
-            "preco": 119.99,
-            "disponivel": true
-          },
-          "GG": {
-            "preco": 99.99,
-            "disponivel": true
-          }
-        }
-      },
-      {
-        "nome": "Camiseta Preta Estampada",
-        "id": 2,
-        "tamanhos": {
-          "P": {
-            "preco": 34.99,
-            "disponivel": true
-          },
-          "M": {
-            "preco": 34.99,
-            "disponivel": true
-          },
-          "G": {
-            "preco": 34.99,
-            "disponivel": false
-          },
-          "GG": {
-            "preco": 34.99,
-            "disponivel": true
-          }
-        }
-      },
-      {
-        "nome": "Camiseta Azul Marinho",
-        "id": 3,
-        "tamanhos": {
-          "P": {
-            "preco": 32.99,
-            "disponivel": false
-          },
-          "M": {
-            "preco": 32.99,
-            "disponivel": true
-          },
-          "G": {
-            "preco": 32.99,
-            "disponivel": true
-          },
-          "GG": {
-            "preco": 32.99,
-            "disponivel": true
-          }
+  "produtos": [
+    {
+      "nome": "Camisa Bragantino 23/24",
+      "id": 1,
+      "imagem": "camisas/BRAGANTINO.png",
+      "tipo": "camiseta",
+      "tamanhos": {
+        "P": {
+          "preco": 59.99,
+          "disponivel": true
+        },
+        "M": {
+          "preco": 79.99,
+          "disponivel": false
+        },
+        "G": {
+          "preco": 119.99,
+          "disponivel": true
+        },
+        "GG": {
+          "preco": 99.99,
+          "disponivel": true
         }
       }
-    ]
-  }
-  
+    },
+    {
+      "nome": "Camisa Flamengo 2024",
+      "id": 2,
+      "imagem": "camisas/Flamengo24.jpg",
+      "tipo": "camiseta",
+      "tamanhos": {
+        "P": {
+          "preco": 34.99,
+          "disponivel": true
+        },
+        "M": {
+          "preco": 34.99,
+          "disponivel": true
+        },
+        "G": {
+          "preco": 34.99,
+          "disponivel": false
+        },
+        "GG": {
+          "preco": 34.99,
+          "disponivel": true
+        }
+      }
+    },
+    {
+      "nome": "Camisa Juventus 23/24",
+      "id": 3,
+      "imagem": "camisas/juventus24.png",
+      "tipo": "camiseta",
+      "tamanhos": {
+        "P": {
+          "preco": 32.99,
+          "disponivel": false
+        },
+        "M": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "G": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "GG": {
+          "preco": 32.99,
+          "disponivel": true
+        }
+      }
+    },
+    {
+      "nome": "Camisa São Paulo 23/24",
+      "id": 4,
+      "imagem": "camisas/saopaulo-preta.png",
+      "tipo": "camiseta",
+      "tamanhos": {
+        "P": {
+          "preco": 32.99,
+          "disponivel": false
+        },
+        "M": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "G": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "GG": {
+          "preco": 32.99,
+          "disponivel": true
+        }
+      }
+    },
+    {
+      "nome": "Hugo Boss x Looney Toones",
+      "id": 5,
+      "imagem": "conjuntos/c-boss-branco.jpg",
+      "tipo": "conjunto",
+      "tamanhos": {
+        "P": {
+          "preco": 32.99,
+          "disponivel": false
+        },
+        "M": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "G": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "GG": {
+          "preco": 32.99,
+          "disponivel": true
+        }
+      }
+    },
+    {
+      "nome": "Armani Dourado",
+      "id": 6,
+      "imagem": "conjuntos/armani-dourado.png",
+      "tipo": "conjunto",
+      "tamanhos": {
+        "P": {
+          "preco": 32.99,
+          "disponivel": false
+        },
+        "M": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "G": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "GG": {
+          "preco": 32.99,
+          "disponivel": true
+        }
+      }
+    },
+    {
+      "nome": "Moletom Hugo Boss",
+      "id": 7,
+      "imagem": "casacos-moletons/boss-azul-preto.jpg",
+      "tipo": "blusa",
+      "tamanhos": {
+        "P": {
+          "preco": 32.99,
+          "disponivel": false
+        },
+        "M": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "G": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "GG": {
+          "preco": 32.99,
+          "disponivel": true
+        }
+      }
+    },
+    {
+      "nome": "Corta-vento Milan",
+      "id": 8,
+      "imagem": "casacos-moletons/corta-milan.jpg",
+      "tipo": "blusa",
+      "tamanhos": {
+        "P": {
+          "preco": 32.99,
+          "disponivel": false
+        },
+        "M": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "G": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "GG": {
+          "preco": 32.99,
+          "disponivel": true
+        }
+      }
+    },
+    {
+      "nome": "Moletom Quiksilver",
+      "id": 9,
+      "imagem": "casacos-moletons/moleta3quik.jpg",
+      "tipo": "blusa",
+      "tamanhos": {
+        "P": {
+          "preco": 32.99,
+          "disponivel": false
+        },
+        "M": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "G": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "GG": {
+          "preco": 32.99,
+          "disponivel": true
+        }
+      }
+    }
+  ]
+}
