@@ -1,17 +1,3 @@
-window.onload = function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const imgUrl = urlParams.get('img');
-    const cardTitle = urlParams.get('title');
-
-    if (imgUrl) {
-        document.getElementById('cardImage').src = imgUrl;
-    }
-
-    if (cardTitle) {
-        document.getElementById('cardTitle').textContent = cardTitle;
-    }
-};
-
 document.addEventListener("DOMContentLoaded", function() {
     fetch('produtos.json')
         .then(response => response.json())
@@ -42,14 +28,28 @@ document.addEventListener("DOMContentLoaded", function() {
                         productCard.classList.add('indisponivel');
                     }
 
+                    // Define o texto e link do botão com base na disponibilidade do produto
+                    let buttonText, buttonHref;
+                    if (!produto.disp) {
+                        productCard.classList.add('indisponivel');
+                        buttonText = 'Encomendar';
+                        buttonHref = 'https://w.app/srt2uD';
+                        buttonClass = 'btn btn-primary btn-encomendar'; // Adicionei uma classe específica para "Encomendar"
+                    } else {
+                        buttonText = 'Comprar';
+                        buttonHref = `base_buy.html?product_id=${produto.id}`;
+                        buttonClass = 'btn btn-primary'; // Classe padrão para "Comprar"
+                    }
+                    
                     productCard.innerHTML = `
                         <img src="imgs/${produto.imagem}" class="card-img-top" alt="${produto.nome}">
                         <div class="card-body">
                             <h5 class="card-title">${produto.nome}</h5>
-                            <p class="card-text">Disponível</p>
-                            <a href="base_buy.html?product_id=${produto.id}" class="btn btn-primary">Comprar</a>
+                            <p class="card-text">${produto.disp ? 'Disponível' : 'Indisponível'}</p>
+                            <a href="${buttonHref}" class="${buttonClass}">${buttonText}</a>
                         </div>
                     `;
+                    
                     productsContainer.appendChild(productCard);
                 } else {
                     console.error('Container não encontrado para tipo:', produto.tipo);

@@ -130,7 +130,7 @@
       "id": 6,
       "imagem": "conjuntos/armani-dourado.png",
       "tipo": "conjunto",
-      "disp": true,
+      "disp": false,
       "tamanhos": {
         "P": {
           "preco": 32.99,

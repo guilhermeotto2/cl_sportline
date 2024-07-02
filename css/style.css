@@ -212,3 +212,12 @@ input {
 .instagram-link:hover {
     color: black;
 }
+
+.indisponivel img{
+    opacity: 0.7;
+}
+
+.btn-encomendar {
+    background-color: #3b4146;
+    border: none;
+}
