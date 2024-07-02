@@ -29,6 +29,10 @@
     box-shadow: none; 
 }
 
+.nav-item a{
+    color: black !important;
+}
+
 .form-control {
     width: 30vw;
 }

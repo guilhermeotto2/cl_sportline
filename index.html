@@ -6,13 +6,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>CL Sportline BOOTSTRAP</title>
+    <title>CL Sportline</title>
 </head>
 <body class="bg-">
     <!--NAV BAR-->
     <nav class="navbar bg-body-tertiary">
 
-        <div class="container-fluid">
+        <div class="container-fluid fixed-top bg-dark">
             <!--LOGO-->
             <div class="logo d-flex justify-content-start align-items-center"><a class="navbar-brand logo"><img src="imgs/CLfont.png" alt="logo-clsportline"></a></div>
             <!--SEARCHBAR-->
@@ -36,18 +36,18 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Página inicial</a>
+                            <a class="nav-link active" aria-current="page">Página inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Camisas de time</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Conjuntos</a>
+                            <a class="nav-link" href="#camisas">Camisas de time</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="">Moletons</a>
+                            <a class="nav-link" href="#conjuntos">Conjuntos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#casacos">Moletons</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -142,20 +142,20 @@
     -->
     <!--CAMISAS-->
 
-    <div class="container mt-5">
+    <div class="container mt-5" id="camisas">
         <h2 class="mb-4 text-left">Camisas</h2>
         <br>
         <div id="camisas-container" class="products-container"></div>
     </div>
 
 
-    <div class="container mt-5">
+    <div class="container mt-5" id="conjuntos">
         <h2 class="mb-4 text-left">Conjuntos</h2>
         <br>
         <div id="conjuntos-container" class="products-container"></div>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-5" id="casacos">
         <h2 class="mb-4 text-left">Casacos e moletons</h2>
         <br>
         <div id="blusas-container" class="products-container"></div>
