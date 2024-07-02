@@ -26,44 +26,43 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon d-flex justify-content-center align-items-center ms-1"><i class="fa-solid fa-bars"></i></span>
                 </button>
-
             </div>
             <!--MENU ABERTO-->
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-
                 <div class="offcanvas-body">
-
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Página inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="">Camisas de time</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Conjuntos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Moletons</a>
+                        </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                                Fale com a gente
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="https://www.instagram.com/cl.sportline/">Instagram</a></li>
+                                <li><a class="dropdown-item" href="https://w.app/srt2uD">Whatsapp</a></li>
                             </ul>
                         </li>
                     </ul>
-
                 </div>
-
             </div>
-
         </div>
-
     </nav>
     
     <!--SLIDE-->
@@ -144,114 +143,44 @@
     <!--CAMISAS-->
 
     <div class="container mt-5">
-
-        <h2 class="mb-4 text-left">Camisas disponíveis</h2>
-
+        <h2 class="mb-4 text-left">Camisas</h2>
         <br>
-
-        <div class="products-container">
-
-            <div class="card" data-img="imgs/camisas/BRAGANTINO.png" onclick="redirectToBasePage(this)">
-                <img src="imgs/camisas/BRAGANTINO.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Camisa Bragantino 23/24</h5>
-                    <p class="card-text">Clique para comprar</p>
-                    <a href="base_buy.html?img=imgs/camisas/BRAGANTINO.png&title=Camisa Bragantino 23/24&" class="btn btn-primary">Ver detalhes</a>
-                </div>
-            </div>
-            
-
-            <div class="card">
-                <img src="imgs/camisas/Flamengo24.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Camisa Flamengo 2024</h5>
-                    <p class="card-text">Clique para comprar</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="imgs/camisas/juventus24.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Camisa Juventus 23/24</h5>
-                    <p class="card-text">Clique para comprar</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="imgs/camisas/saopaulo-preta.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Camisa São Paulo 23/24</h5>
-                    <p class="card-text">Clique para comprar</p>
-                </div>
-            </div>
-            
-            
-        </div>
-
+        <div id="camisas-container" class="products-container"></div>
     </div>
 
-    <div class="container mt-5">
 
+    <div class="container mt-5">
         <h2 class="mb-4 text-left">Conjuntos</h2>
-
         <br>
-
-        <div class="products-container">
-
-            <div class="card">
-                <img src="imgs/conjuntos/c-boss-branco.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Hugo Boss x Looney Toones</h5>
-                    <p class="card-text">Clique para comprar</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="imgs/conjuntos/armani-dourado.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Armani Dourado</h5>
-                    <p class="card-text">Clique para comprar</p>
-                </div>
-            </div>
-
-        </div>
-
+        <div id="conjuntos-container" class="products-container"></div>
     </div>
 
     <div class="container mt-5">
-
-        <h2 class="mb-4 text-left">Moletons e Casacos</h2>
-
+        <h2 class="mb-4 text-left">Casacos e moletons</h2>
         <br>
-
-        <div class="products-container">
-
-            <div class="card">
-                <img src="imgs/casacos-moletons/boss-azul-preto.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Moletom Hugo Boss</h5>
-                    <p class="card-text">Clique para comprar</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="imgs/casacos-moletons/corta-milan.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Corta-vento Milan</h5>
-                    <p class="card-text">Clique para comprar</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="imgs/casacos-moletons/moleta3quik.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Moletom Quiksilver</h5>
-                    <p class="card-text">Clique para comprar</p>
-                </div>
-            </div>
-
-        </div>
+        <div id="blusas-container" class="products-container"></div>
     </div>
+
+<!--INSTA-->
+<div class="container mt-5">
+    <h2 class="mb-4 text-left">Fique por dentro das novidades!</h2>
+    <div class="insta">
+        <a href="https://www.instagram.com/cl.sportline/" class="instagram-link">
+            <h4>@cl.sportline</h4>
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+</div>
+<br><br><br>
+<!--FOOTER-->
+<div class="container">
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <span class="text-muted">© 2024 CL SPORTLINE. Todos os direitos reservados. Desenvolvido por <a target="_blank" href="https://www.instagram.com/agenciastroweb/">Agência Astro</a></span>
+        </div>
+    </footer>
+</div>
+
 
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

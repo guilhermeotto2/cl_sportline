@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         <img src="imgs/${produto.imagem}" class="card-img-top" alt="${produto.nome}">
                         <div class="card-body">
                             <h5 class="card-title">${produto.nome}</h5>
-                            <p class="card-text">Clique para comprar</p>
-                            <a href="base_buy.html?product_id=${produto.id}" class="btn btn-primary">Ver detalhes</a>
+                            <p class="card-text">Disponível</p>
+                            <a href="base_buy.html?product_id=${produto.id}" class="btn btn-primary">Comprar</a>
                         </div>
                     `;
                     productsContainer.appendChild(productCard);
