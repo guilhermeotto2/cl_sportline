@@ -36,6 +36,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (productsContainer) {
                     const productCard = document.createElement('div');
                     productCard.classList.add('card');
+                    
+                    // Adiciona a classe 'indisponivel' se disp for false
+                    if (!produto.disp) {
+                        productCard.classList.add('indisponivel');
+                    }
+
                     productCard.innerHTML = `
                         <img src="imgs/${produto.imagem}" class="card-img-top" alt="${produto.nome}">
                         <div class="card-body">
@@ -52,9 +58,6 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(error => console.error('Erro ao carregar os dados:', error));
 });
-
-
-
 
 window.onload = function() {
     const urlParams = new URLSearchParams(window.location.search);
