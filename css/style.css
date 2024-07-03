@@ -221,3 +221,14 @@ input {
     background-color: #3b4146;
     border: none;
 }
+
+#preloader {
+    background: #000 url(../imgs/loader.gif) no-repeat center center;
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 122220;
+    opacity: 1; /* Opacidade inicial */
+    transition: opacity 1s ease;
+}

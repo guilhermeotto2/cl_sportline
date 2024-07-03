@@ -9,6 +9,26 @@
     <title>CL Sportline</title>
 </head>
 <body class="bg-">
+    <!--PRELOADER-->
+    <div id="preloader"></div> 
+    <script>
+    // Obtém uma referência para o elemento preloader
+    var loader = document.getElementById("preloader");
+
+    function diminuirOpacidade() {
+    loader.style.opacity = "0"; // Define a opacidade como 0
+    }
+
+    // Define uma função para esconder o preloader após 5 segundos
+    function hidePreloader() {
+        loader.style.display = "none";
+    }
+
+    // Aguarde 5 segundos antes de chamar a função para esconder o preloader
+    setTimeout(hidePreloader, 4000); // 5000 milissegundos = 5 segundos
+    setTimeout(diminuirOpacidade, 2500);
+    </script>
+
     <!--NAV BAR-->
     <nav class="navbar bg-body-tertiary">
 
@@ -110,37 +130,6 @@
         <i class="fa fa-angle-down"></i>
     </div>
 
-    <!--BLOCOS DE PAGAMENTO-->
-    <!--
-    <div class="container text-left ">
-        <div class="blocks">
-            <div class="block1">
-                <i class="fa-solid fa-credit-card"></i>
-                <div>
-                    <h3>PARCELAMENTO</h3>
-                    <p>Pague em até 3x sem juros</p>
-                </div>
-            </div>
-
-            <div class="block2">
-                <i class="fa-solid fa-lock"></i>
-                <div>
-                    <h3>SITE SEGURO</h3>
-                    <p>Compre com segurança</p>
-                </div>
-            </div>
-
-            <div class="block3">
-                <i class="fa-solid fa-hand-holding-dollar"></i>
-                <div>
-                    <h3>DESCONTO Á VISTA</h3>
-                    <p>10% de desconto no pix</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-    <!--CAMISAS-->
 
     <div class="container mt-5" id="camisas">
         <h2 class="mb-4 text-left">Camisas</h2>
