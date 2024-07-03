@@ -8,20 +8,20 @@
       "disp": true,
       "tamanhos": {
         "P": {
-          "preco": 79.99,
-          "disponivel": true
+          "preco": 109.99,
+          "disponivel": false
         },
         "M": {
-          "preco": 89.99,
-          "disponivel": true
+          "preco": 109.99,
+          "disponivel": false
         },
         "G": {
-          "preco": 99.99,
+          "preco": 109.99,
           "disponivel": true
         },
         "GG": {
           "preco": 109.99,
-          "disponivel": true
+          "disponivel": false
         }
       }
     },
@@ -33,20 +33,20 @@
       "disp": true,
       "tamanhos": {
         "P": {
-          "preco": 79.99,
-          "disponivel": true
+          "preco": 109.99,
+          "disponivel": false
         },
         "M": {
-          "preco": 89.99,
+          "preco": 109.99,
           "disponivel": true
         },
         "G": {
-          "preco": 99.99,
-          "disponivel": true
+          "preco": 109.99,
+          "disponivel": false
         },
         "GG": {
           "preco": 109.99,
-          "disponivel": true
+          "disponivel": false
         }
       }
     },
@@ -58,20 +58,20 @@
       "disp": true,
       "tamanhos": {
         "P": {
-          "preco": 79.99,
-          "disponivel": true
+          "preco": 109.99,
+          "disponivel": false
         },
         "M": {
-          "preco": 89.99,
-          "disponivel": true
+          "preco": 109.99,
+          "disponivel": false
         },
         "G": {
-          "preco": 99.99,
+          "preco": 109.99,
           "disponivel": true
         },
         "GG": {
           "preco": 109.99,
-          "disponivel": true
+          "disponivel": false
         }
       }
     },
@@ -83,20 +83,20 @@
       "disp": true,
       "tamanhos": {
         "P": {
-          "preco": 79.99,
-          "disponivel": true
+          "preco": 109.99,
+          "disponivel": false
         },
         "M": {
-          "preco": 89.99,
-          "disponivel": true
+          "preco": 109.99,
+          "disponivel": false
         },
         "G": {
-          "preco": 99.99,
+          "preco": 109.99,
           "disponivel": true
         },
         "GG": {
           "preco": 109.99,
-          "disponivel": true
+          "disponivel": false
         }
       }
     },
@@ -233,15 +233,15 @@
       "disp": true,
       "tamanhos": {
         "P": {
-          "preco": 79.99,
+          "preco": 109.99,
           "disponivel": false
         },
         "M": {
-          "preco": 89.99,
+          "preco": 109.99,
           "disponivel": true
         },
         "G": {
-          "preco": 99.99,
+          "preco": 109.99,
           "disponivel": true
         },
         "GG": {
@@ -274,6 +274,32 @@
           "disponivel": false
         }
       }
+    },
+    {
+      "nome": "Camisa Inglaterra 2024",
+      "id": 12,
+      "imagem": "camisas/inglaterra.png",
+      "tipo": "camiseta",
+      "disp": true,
+      "tamanhos": {
+        "P": {
+          "preco": 109.99,
+          "disponivel": false
+        },
+        "M": {
+          "preco": 109.99,
+          "disponivel": true
+        },
+        "G": {
+          "preco": 109.99,
+          "disponivel": false
+        },
+        "GG": {
+          "preco": 109.99,
+          "disponivel": false
+        }
+      }
     }
+    
   ]
 }
