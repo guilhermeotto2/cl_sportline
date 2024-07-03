@@ -83,6 +83,13 @@ window.onload = function() {
                     document.getElementById('buttonG').addEventListener('click', () => updateProductDetails(produto, 'G'));
                     document.getElementById('buttonGG').addEventListener('click', () => updateProductDetails(produto, 'GG'));
 
+                    document.getElementById('whatsappButton').addEventListener('click', function() {
+                        var phoneNumber = '555191618973'; // Número de telefone no formato internacional
+                        var message = `Olá, tenho interesse na peça ${produto.nome} no tamanho ${tamanhoMsg}!`; // Mensagem personalizada
+                        var url = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+                        
+                        window.open(url, '_blank');
+                    });
                     // Adicionar lógica adicional aqui para lidar com a imagem e outros detalhes do produto, se necessário
                 } else {
                     console.error('Produto não encontrado.');
@@ -96,6 +103,7 @@ window.onload = function() {
 
 // Função para atualizar o preço e disponibilidade baseado no tamanho selecionado
 const updateProductDetails = (produto, tamanhoSelecionado) => {
+    tamanhoMsg = tamanhoSelecionado
     const tamanhoInfo = produto.tamanhos[tamanhoSelecionado];
     const cardPrice = document.getElementById('cardPrice');
     cardPrice.textContent = `R$ ${tamanhoInfo.preco.toFixed(2)} - ${tamanhoInfo.disponivel ? 'Disponível' : 'Indisponível'}`;
