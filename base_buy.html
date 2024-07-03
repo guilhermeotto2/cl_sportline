@@ -101,7 +101,8 @@
 
 
         .c-buy {
-            height: 67vh;
+            height: 70vh;
+            margin-top: 120px !important;
         }
 
         @media (max-width: 768px) {
@@ -112,6 +113,7 @@
 
             .c-buy {
                 height: 80vh !important;
+                margin-top: 70px !important;
             }
 
             .product-details {
@@ -129,10 +131,10 @@
             }
 
             .c-mais-camisas {
-                margin-top: 25% !important;
+            margin-top: 200px !important;
             }
         }
-        
+
         .buy-btn {
             background-color: #007bff !important;
             color: white !important;
@@ -146,9 +148,7 @@
             border:none !important;
         }
         
-        .c-camisa {
-            margin-top: 10% !important;
-        }
+
 
     </style>
 </head>
@@ -207,7 +207,7 @@
     </nav>
 
     <!-- Detalhes do Produto -->
-    <div class="container mt-5 c-camisa c-buy">
+    <div class="container mt-5 c-camisa c-buy"> 
         <div class="row align-items-center">
             <div class="col-md-5 text-center">
                 <img id="cardImage" class="product-image img-fluid" alt="Imagem do Produto">
@@ -215,7 +215,7 @@
             <div class="col-md-7 ">
                 <div class="product-details">
                     <h2 id="cardTitle"></h2>
-                    <p>Nós da CL, asseguramos produtos de confiança e qualidade, para atender perfeitamente às suas necessidades.</p>
+                    <p>Escolha o tamanho certo para seu produto, veja a disponibilidade e clique em comprar!</p>
                     <div class="product-price" id="cardPrice"></div>
                     <div class="product-buttons" id="productButtons">
                         <button aria-label="Tamanho P" id="buttonP">P</button>
@@ -228,9 +228,8 @@
             </div>
         </div>
     </div>
-    
-    <div class="container mt-5" id="casacos">
-        <h2 class="mb-4 text-left">Pode ser que você se interesse...</h2>
+    <div class="c-mais-camisas container mt-5 " id="casacos">
+        <h2 class="mt-5 text-left">Pode ser que você se interesse...</h2>
         <br>
         <div id="blusas-container" class="products-container"></div>
     </div>

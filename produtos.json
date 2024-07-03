@@ -8,19 +8,19 @@
       "disp": true,
       "tamanhos": {
         "P": {
-          "preco": 59.99,
+          "preco": 79.99,
           "disponivel": true
         },
         "M": {
-          "preco": 79.99,
-          "disponivel": false
+          "preco": 89.99,
+          "disponivel": true
         },
         "G": {
-          "preco": 119.99,
+          "preco": 99.99,
           "disponivel": true
         },
         "GG": {
-          "preco": 99.99,
+          "preco": 109.99,
           "disponivel": true
         }
       }
@@ -33,19 +33,19 @@
       "disp": true,
       "tamanhos": {
         "P": {
-          "preco": 34.99,
+          "preco": 79.99,
           "disponivel": true
         },
         "M": {
-          "preco": 34.99,
+          "preco": 89.99,
           "disponivel": true
         },
         "G": {
-          "preco": 34.99,
-          "disponivel": false
+          "preco": 99.99,
+          "disponivel": true
         },
         "GG": {
-          "preco": 34.99,
+          "preco": 109.99,
           "disponivel": true
         }
       }
@@ -58,19 +58,19 @@
       "disp": true,
       "tamanhos": {
         "P": {
-          "preco": 32.99,
-          "disponivel": false
+          "preco": 79.99,
+          "disponivel": true
         },
         "M": {
-          "preco": 32.99,
+          "preco": 89.99,
           "disponivel": true
         },
         "G": {
-          "preco": 32.99,
+          "preco": 99.99,
           "disponivel": true
         },
         "GG": {
-          "preco": 32.99,
+          "preco": 109.99,
           "disponivel": true
         }
       }
@@ -83,19 +83,19 @@
       "disp": true,
       "tamanhos": {
         "P": {
-          "preco": 32.99,
-          "disponivel": false
+          "preco": 79.99,
+          "disponivel": true
         },
         "M": {
-          "preco": 32.99,
+          "preco": 89.99,
           "disponivel": true
         },
         "G": {
-          "preco": 32.99,
+          "preco": 99.99,
           "disponivel": true
         },
         "GG": {
-          "preco": 32.99,
+          "preco": 109.99,
           "disponivel": true
         }
       }
@@ -108,20 +108,20 @@
       "disp": true,
       "tamanhos": {
         "P": {
-          "preco": 32.99,
+          "preco": 299.99,
           "disponivel": false
         },
         "M": {
-          "preco": 32.99,
+          "preco": 299.99,
           "disponivel": true
         },
         "G": {
-          "preco": 32.99,
+          "preco": 299.99,
           "disponivel": true
         },
         "GG": {
-          "preco": 32.99,
-          "disponivel": true
+          "preco": 299.99,
+          "disponivel": false
         }
       }
     },
@@ -133,19 +133,19 @@
       "disp": false,
       "tamanhos": {
         "P": {
-          "preco": 32.99,
+          "preco": 299.99,
           "disponivel": false
         },
         "M": {
-          "preco": 32.99,
+          "preco": 299.99,
           "disponivel": true
         },
         "G": {
-          "preco": 32.99,
+          "preco": 299.99,
           "disponivel": true
         },
         "GG": {
-          "preco": 32.99,
+          "preco": 299.99,
           "disponivel": true
         }
       }
@@ -158,20 +158,20 @@
       "disp": true,
       "tamanhos": {
         "P": {
-          "preco": 32.99,
+          "preco": 199.99,
           "disponivel": false
         },
         "M": {
-          "preco": 32.99,
-          "disponivel": true
+          "preco": 199.99,
+          "disponivel": false
         },
         "G": {
-          "preco": 32.99,
+          "preco": 199.99,
           "disponivel": true
         },
         "GG": {
-          "preco": 32.99,
-          "disponivel": true
+          "preco": 199.99,
+          "disponivel": false
         }
       }
     },
@@ -183,20 +183,20 @@
       "disp": true,
       "tamanhos": {
         "P": {
-          "preco": 32.99,
+          "preco": 229.99,
           "disponivel": false
         },
         "M": {
-          "preco": 32.99,
+          "preco": 229.99,
           "disponivel": true
         },
         "G": {
-          "preco": 32.99,
-          "disponivel": true
+          "preco": 229.99,
+          "disponivel": false
         },
         "GG": {
-          "preco": 32.99,
-          "disponivel": true
+          "preco": 229.99,
+          "disponivel": false
         }
       }
     },
@@ -208,20 +208,20 @@
       "disp": true,
       "tamanhos": {
         "P": {
-          "preco": 32.99,
+          "preco": 199.99,
           "disponivel": false
         },
         "M": {
-          "preco": 32.99,
-          "disponivel": true
+          "preco": 199.99,
+          "disponivel": false
         },
         "G": {
-          "preco": 32.99,
+          "preco": 199.99,
           "disponivel": true
         },
         "GG": {
-          "preco": 32.99,
-          "disponivel": true
+          "preco": 199.99,
+          "disponivel": false
         }
       }
     },
@@ -233,20 +233,45 @@
       "disp": true,
       "tamanhos": {
         "P": {
-          "preco": 32.99,
+          "preco": 79.99,
           "disponivel": false
         },
         "M": {
-          "preco": 32.99,
+          "preco": 89.99,
           "disponivel": true
         },
         "G": {
-          "preco": 32.99,
+          "preco": 99.99,
           "disponivel": true
         },
         "GG": {
-          "preco": 32.99,
+          "preco": 109.99,
           "disponivel": true
+        }
+      }
+    },
+    {
+      "nome": "Boss x NBA",
+      "id": 11,
+      "imagem": "casacos-moletons/bossxnba.png",
+      "tipo": "blusa",
+      "disp": true,
+      "tamanhos": {
+        "P": {
+          "preco": 179.99,
+          "disponivel": false
+        },
+        "M": {
+          "preco": 179.99,
+          "disponivel": true
+        },
+        "G": {
+          "preco": 179.99,
+          "disponivel": false
+        },
+        "GG": {
+          "preco": 179.99,
+          "disponivel": false
         }
       }
     }
