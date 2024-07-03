@@ -32,8 +32,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     let buttonText, buttonHref;
                     if (!produto.disp) {
                         productCard.classList.add('indisponivel');
+
+                        const phoneNumber = '555191618973';
+                        const message = `Olá, tenho interesse em encomendar a peça ${produto.nome}`;
+                        const EncomendaUrl = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+
                         buttonText = 'Encomendar';
-                        buttonHref = 'https://w.app/srt2uD';
+                        buttonId = "EncomendaMsg";
+                        buttonHref = EncomendaUrl;
                         buttonClass = 'btn btn-primary btn-encomendar'; // Adicionei uma classe específica para "Encomendar"
                     } else {
                         buttonText = 'Comprar';
