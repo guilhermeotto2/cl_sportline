@@ -1,7 +1,7 @@
 {
   "produtos": [
     {
-      "nome": "Camisa Bragantino 23/24",
+      "nome": "Camisa Bragantino 2023",
       "id": 1,
       "imagem": "camisas/BRAGANTINO.png",
       "tipo": "camiseta",
@@ -51,7 +51,7 @@
       }
     },
     {
-      "nome": "Camisa Juventus 23/24",
+      "nome": "Camisa Juventus 2023",
       "id": 3,
       "imagem": "camisas/juventus24.png",
       "tipo": "camiseta",
@@ -76,7 +76,7 @@
       }
     },
     {
-      "nome": "Camisa São Paulo 23/24",
+      "nome": "Camisa São Paulo 2023",
       "id": 4,
       "imagem": "camisas/saopaulo-preta.png",
       "tipo": "camiseta",
@@ -205,6 +205,31 @@
       "id": 9,
       "imagem": "casacos-moletons/moleta3quik.jpg",
       "tipo": "blusa",
+      "disp": true,
+      "tamanhos": {
+        "P": {
+          "preco": 32.99,
+          "disponivel": false
+        },
+        "M": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "G": {
+          "preco": 32.99,
+          "disponivel": true
+        },
+        "GG": {
+          "preco": 32.99,
+          "disponivel": true
+        }
+      }
+    },
+    {
+      "nome": "Internacional Treino 2024",
+      "id": 10,
+      "imagem": "camisas/inter-treinopng.png",
+      "tipo": "camiseta",
       "disp": true,
       "tamanhos": {
         "P": {
