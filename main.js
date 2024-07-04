@@ -130,3 +130,75 @@ const updateButtonStyle = (buttonId, disponivel) => {
         button.classList.remove('btn-disabled'); // Remover classe para cor cinza
     }
 };
+
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('produtos.json')
+        .then(response => response.json())
+        .then(data => {
+            const maisProdutosContainer = document.getElementById('mais-produtos');
+            if (maisProdutosContainer) {
+                // Seleciona aleatoriamente 4 produtos
+                const randomProducts = getRandomProducts(data.produtos, 4);
+
+                randomProducts.forEach(produto => {
+                    const productCard = document.createElement('div');
+                    productCard.classList.add('card');
+
+                    // Adiciona a classe 'indisponivel' se disp for false
+                    if (!produto.disp) {
+                        productCard.classList.add('indisponivel');
+                    }
+
+                    // Define o texto e link do botão com base na disponibilidade do produto
+                    let buttonText, buttonHref;
+                    if (!produto.disp) {
+                        productCard.classList.add('indisponivel');
+
+                        const phoneNumber = '555191618973';
+                        const message = `Olá, tenho interesse em encomendar a peça ${produto.nome}`;
+                        const EncomendaUrl = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+
+                        buttonText = 'Encomendar';
+                        buttonId = "EncomendaMsg";
+                        buttonHref = EncomendaUrl;
+                        buttonClass = 'btn btn-primary btn-encomendar'; // Adicionei uma classe específica para "Encomendar"
+                    } else {
+                        buttonText = 'Comprar';
+                        buttonHref = `base_buy.html?product_id=${produto.id}`;
+                        buttonClass = 'btn btn-primary'; // Classe padrão para "Comprar"
+                    }
+
+                    productCard.innerHTML = `
+                        <img src="imgs/${produto.imagem}" class="card-img-top" alt="${produto.nome}">
+                        <div class="card-body">
+                            <h5 class="card-title">${produto.nome}</h5>
+                            <p class="card-text">${produto.disp ? 'Disponível' : 'Indisponível'}</p>
+                            <a href="base_buy.html?product_id=${produto.id}" class="btn btn-primary">${produto.disp ? 'Comprar' : 'Encomendar'}</a>
+                        </div>
+                    `;
+
+                    maisProdutosContainer.appendChild(productCard);
+                });
+            } else {
+                console.error('Container não encontrado para mais produtos.');
+            }
+        })
+        .catch(error => console.error('Erro ao carregar os dados:', error));
+});
+
+// Função para selecionar aleatoriamente um número específico de produtos
+function getRandomProducts(products, count) {
+    const shuffled = products.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+// pesquisa no index
+
+function redirectToSearchPage(event) {
+    event.preventDefault();
+    const searchQuery = document.getElementById('searchbar').value;
+    if (searchQuery) {
+        window.location.href = `search_results.html?query=${encodeURIComponent(searchQuery)}`;
+    }
+}
+
