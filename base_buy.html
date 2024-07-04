@@ -163,6 +163,10 @@
             </div>
             <!--SEARCHBAR-->
             <div class="d-flex justify-content-end align-items-center search_menu">
+                <form class="searchbox d-flex justify-content-center search-form" role="search" onsubmit="redirectToSearchPage(event)">
+                    <input class="form-control me-2" type="search" placeholder="Pesquise aqui!" aria-label="Pesquisar" id="searchbar">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
                 <!--MENU ICON-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon d-flex justify-content-center align-items-center ms-1"><i class="fa-solid fa-bars"></i></span>
@@ -228,10 +232,10 @@
             </div>
         </div>
     </div>
-    <div class="c-mais-camisas container mt-5 " id="casacos">
+    <div class="c-mais-camisas container mt-5 ">
         <h2 class="mt-5 text-left">Pode ser que você se interesse...</h2>
         <br>
-        <div id="blusas-container" class="products-container"></div>
+        <div id="mais-produtos" class="products-container"></div>
     </div>
     
 
